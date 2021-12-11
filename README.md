@@ -51,3 +51,4 @@
 \* Technologies `I'm interested in and haven't worked with:` - a little knowledge and experience, I want to work with
 
 \* Technologies `I have a basic knowledge of:` - a little knowledge and experience, rather I do not want to work with, but I'm opened to opportunities
+
