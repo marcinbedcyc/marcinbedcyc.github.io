@@ -244,6 +244,10 @@ section {
   background: #fff;
   border: 2px solid var(--accent-color);
 }
+.umk-achievements {
+  font-size: large;
+  font-weight: bold;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -290,7 +294,6 @@ section {
   margin-bottom: 20px;
   position: relative;
   color: var(--my-background);
-  height: 115px;
 }
 
 /*--------------------------------------------------------------
