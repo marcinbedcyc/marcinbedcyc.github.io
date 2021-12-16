@@ -4,76 +4,761 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="Marcin Cyc">
 
-  <title>Wkrótce</title>
+  <title>Portfolio Marcin Cyc</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" 
+  rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" 
+    type="text/css">  
 
   <!-- Custom styles for this template -->
-  <link href="css/coming-soon.css" rel="stylesheet">
+  <link href="css/portfolio-page.css" rel="stylesheet">
 
 </head>
 
-<body>
-
-  <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="mp4/bg.mp4" type="video/mp4">
-  </video>
-
-  <div class="masthead">
-    <div class="masthead-bg"></div>
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-12 my-auto">
-          <div class="masthead-content text-white py-5 py-md-0">
-            <h1 class="mb-3">Już wkrótce!</h1>
-            <p class="mb-5">Cześć! Jestem <b>Marcin</b> i poszukuję pracy jako junior Python developer. Aktualnie pracuję nad stroną portfolio, porządkuję repozytoria dotychczasowych projektów oraz tworzę CV.</p>
-            <p class="mb-1"><b>Kontakt:</b></p>
-            <p class="mb-1"><b>E-mail:</b> cmartindev@gmail.com</p>
-            <p class="mb-1"><b>Telefon:</b> 793607234</p>
-          </div>
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#page-top"><img src="img/navbar-logo1.svg" 
+      alt="..." /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+      data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarResponsive" 
+      aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white text-reset" 
+          data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body navbar-dark">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">O mnie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Umiejętności</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Doświadczenie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projekty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
+  </nav>
+  <!-- End Navigation -->
 
-  <div class="social-icons">
-    <ul class="list-unstyled text-center mb-0">
-      <li class="list-unstyled-item">
-        <a href="https://gitlab.com/marcinbedcyc" target="_blank" data-toggle="tooltip" data-placement="auto" title="Profil GitLab">
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container">
+      <div class="masthead-subheading">
+        <span class="typed" data-text="Cześć tu Marcin, jak się masz?"></span>
+      </div>
+      <div class="masthead-heading text-uppercase">
+        <p>Jestem Intern/Junior</p><p>Python Developer</p>
+      </div>
+      <a class="btn button-about btn-primary btn-xl text-uppercase" 
+      href="#about">Więcej o mnie</a>
+    </div>
+  </header>
+  <!-- End Masthead -->
+
+  <main id="main" class="col-lg-8 offset-lg-2">
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>O Mnie</h2>
+          <p class="text-left">
+            Nazywam się Marcin, mam 23 lata i jestem kreatywną osobą z pasją do 
+            programowania oraz technologii.Uwielbiam się uczyć i poznawać nowe 
+            rzeczy. Ciągle dążę do tego aby być lepszą osobą, w tym także
+            lepszym programistą. Jestem osobą przede wszystkim samokształcącą 
+            się,ale również posiadam formalną wiedzę zdobytą na uniwersytecie na
+            kierunku Informatyka. Uważam, że nie ma rzeczy niemożliwych do 
+            wykonania. Wszystko zależy od właściwego podejścia i upartego 
+            dążenia do celu. Prywatnie uwielbiam sport, głównie piłkę nożną 
+            (Manchester United ❤️) i siłownię. W wolnym czasie lubię także 
+            wskoczyć do świata fantasy w postaci książki, filmu, serialu czy gry
+            komputerowej.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <img src="img/profile-img.jpg" class="img-fluid shadow" alt="">
+          </div>
+          <div class="col-xl-8 col-lg-6 col-md-12 pt-4 pt-lg-0 content">
+            <h3>Intern/Junior Python Developer</h3>
+            <p class="fst-italic">
+              Tworzyłem WEB API z wykorzystaniem DRF i innych bibliotek Python. 
+              Ponadto realizowałem zadania z machine learning na studiach 
+              również przy pomocy Python.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Data urodzenia:</strong> <span>5 Marzec 1998</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Strona:</strong> 
+                    <a href="https://marcinbedcyc.github.io" 
+                    class="web-page-link">
+                      https://marcinbedcyc.github.io
+                    </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Telefon:</strong>
+                    <span>793 607 234</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>E-mail:</strong>
+                    <span>cmartindev@gmail.com</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Miasto:</strong>
+                    <span>Rzeszów, Polska</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Języki obce:</strong>
+                    <span>
+                      J.angielski średnio zaawansowany <b>B2</b> (komunikatywny 
+                      w mowie i piśmie)
+                    </span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Wykształcenie:</strong>
+                    <span>Średnie + 3 lata studiów informatycznych</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Praca:</strong>
+                    <span>Szukam pracy</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p></p>
+            <a class="btn button-download-cv btn-xl text-uppercase" 
+            href="marcin_cyc_cv.pdf" target="_blank">Pobierz CV</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Umiejętności</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+             aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos 
+             quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia 
+             fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+
+        <div class="row skills-content">
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h3 class="skill-header">Pracowałem z technologiami</h3>
+            <div class="row mb-3">
+              <div class="col-1"></div>
+              <div class="col-2">
+                <a href="https://www.python.org/" title="Python">
+                  <img src="img/icons/python.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.nginx.com" title="Nginx">
+                  <img src="img/icons/nginx.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.docker.com/" title="Docker">
+                  <img src="img/icons/docker.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.microsoft.com/pl-pl/microsoft-teams/log-in"
+                 title="Microsoft Teams">
+                  <img src="img/icons/teams.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.postgresql.org" title="PostgreSQL">
+                  <img src="img/icons/postgres.png"/>
+                </a>
+              </div>
+              <div class="col-1"></div>
+            </div>
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-2">
+                <a href="https://gitlab.com/" title="GitLab">
+                  <img src="img/icons/gitlab.png"/>
+                </a>
+              </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.djangoproject.com" title="Django">
+                  <img src="img/icons/django.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://code.visualstudio.com/" 
+                title="Visual Studio Code">
+                  <img src="img/icons/vscode.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.oracle.com/pl/database/technologies/appdev/sql.html" 
+                title="OracleSQL">
+                  <img src="img/icons/oracle_sql.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.sqlite.org" title="SQLite">
+                  <img src="img/icons/sqlite.png"/>
+                </a>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h3 class="skill-header">
+              Interesuję się technologiami, ale z nimi nie pracowałem
+            </h3>
+            <div class="row mb-3">
+              <div class="col-1"></div>
+              <div class="col-2">
+                <a href="https://github.com/" title="GitHub">
+                  <img src="img/icons/github.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://angular.io/" title="Angular">
+                  <img src="img/icons/angular.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://en.wikipedia.org/wiki/JavaScript" 
+                title="JavaScript">
+                  <img src="img/icons/javascript.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_stylów"
+                title="CSS">
+                  <img src="img/icons/css.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://pl.wikipedia.org/wiki/HTML5" title="HTML5">
+                  <img src="img/icons/html5.png"/>
+                </a>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h3 class="skill-header">Korzystałem i mam podstawową wiedzę</h3>
+            <div class="row mb-3">
+              <div class="col-2"></div>
+              <div class="col-2">
+                <a href="https://www.java.com" title="Java">
+                  <img src="img/icons/java.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.qt.io" title="Qt">
+                  <img src="img/icons/qt.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://developer.android.com" title="Android">
+                  <img src="img/icons/android.png"/>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="https://pl.wikipedia.org/wiki/C_Sharp" title="C#">
+                  <img src="img/icons/csharp.png"/>
+                </a>
+              </div>
+              <div class="col-2"></div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Doświadczenie</h2>
+          <p>
+            Doświadczenie jakie zdobyłem opiera się głównie na własnym 
+            doskonaleniu się, wiedzy uniwersyteckiej oraz pracy w jednej firmie 
+            tworzącej oprogramowanie komputerowe - głównie w postaci WEB API w 
+            DRF oraz Frontendu w Angular. 
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 ps-4 shadow">
+            <h3 class="experience-title">Praca</h3>
+            <div class="experience-item pb-0">
+              <h4>MGA sp. z o.o. - Python Developer</h4>
+              <h5>czerwiec 2020 - marzec 2021</h5>
+              <p><em>Programista <b>Python</b></em></p>
+              <p>
+                W pełni zaadaptowałem się w firmie. Tworzyłem głównie WEB API w
+                DRF/Flask, które przede wszystkim wykonywały dłuższe zadania w 
+                tle przy pomocy kolejkowania zadań (wykorzystywałem Celery + 
+                Redis). Przystosowywałem projekty do uruchomienia w dowolnym 
+                środowisku dzięki wykorzystaniu Docker. Korzystałem z baz danych 
+                takich jak PostgrSQL, OracleSQL, SQLite. Przeprowadzałem Code 
+                Review oraz automatyzowałem uruchomienie testów jednostkowych 
+                przy pomocy GitLab CI/CD. Pracowałem zarówno zdalnie jak i 
+                stacjonarnie. Komunikowałem się zdalne przy pomocy Microsoft 
+                Teams, Zulip. Rozliczałem się z zadań na platformie Redmine. 
+                Szkoliłem się również z Angular'a. Jako IDE korzystałem z VS 
+                Code'a na platformie Linux.
+              </p>
+              <ul>
+                <li>ul. Piaskowa 6, 87-100 Toruń</li>
+                <li>56 66-24-700</li>
+                <li>info@mga.com.pl</li>
+              </ul>
+            </div>
+
+            <h3 class="experience-title">Edukacja</h3>
+            <div class="experience-item">
+              <h4>MGA sp. z o. o.</h4>
+              <h5>marzec 2020 - maj 2020</h5>
+              <p><em>Staż - programista <b>Python</b></em></p>
+              <p>
+                W ramach stażu poznałem zasady funkcjonowania firmy tworzącej 
+                oprogramowani. Nauczyłem się jak wygląda "workflow", jakie etapy
+                przechodzi kod zanim trafi do klienta i zostanie uruchomiony na 
+                maszynie produkcyjnej. W ramach stażu wraz z grupą studentów 
+                realizowałem projekt aplikacji monolitycznej w Django.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h4>Uniwersyst Mikołaja Kopernika w Toruniu</h4>
+              <h5>2017 - 2021</h5>
+              <p><em>Studia inżynierskie na kierunku <b>Informatyka</b></em></p>
+              <p>
+                Na studiach rozwijałem swoje umiejętności z nauk związanych z 
+                technologiami informacyjnymi. Zdobyłem wiedzę z zagadnień takich
+                jak: obsługa maszyn z Linux'em oraz Windows'em, bazy danych, 
+                algorytmy i struktury danych, analiza matematyczna, podstawy 
+                fizyki, logiki, sieci komputerowe, podstawy uczenia maszynowego,
+                grafika komputerowa, programowanie w różnych językach - Java, 
+                Python, C, C++, C#.
+              </p>
+              <p>Osiągnięcia:</p>
+              <ul>
+                <li>
+                  3-krotny stypendysta <b>Stypendium Rektora</b> dla najlepszych
+                  studentów
+                </li>
+                <li>
+                  wyróżnienie wewnątrz-wydziałowym konkursie na najlepszy 
+                  projekt (którego byłem <b>Kierownikiem</b>) z przedmiotu 
+                  Programowanie Zespołowe oraz zgłoszenie projektu do konkursu 
+                  <b>Forum Młodych Mistrzów</b>.
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Experience Section -->
+    
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projekty</h2>
+          <p class="text-justify">
+            Poniżej znajdują się projekty zrealizowane w ramach zaliczeń 
+            przedmiotów w trakcie studiów. Zazwyczaj prowadzący narzucali nam 
+            technologie oraz ich wersję, przy pomocy których miały zostać 
+            realizowane projekty. Jednak nie ma tego złego, co by na dobre nie 
+            wyszło, ponieważ wykształciło to we mnie łatwość przystosowania się 
+            do dowolnej technologii. Ponadto umieszczone są tutaj projekty, 
+            które realizowałem w celu doskonalenia swoich zdolności. Głównie
+            skupiałem się rozwijaniu umiejętności związanych z językiem 
+            programowania Python. Projekty zostały umieszczone w repozytoriach, 
+            zarówno na platformie Github jak i GitLab.
+          </p>
+          <div class="social-icons mt-3">
+            <span>GitLab:</span>
+            <a class="me-2" href="https://gitlab.com/marcinbedcyc" 
+            target="_blank" data-toggle="tooltip" data-placement="auto" 
+            title="Profil GitLab">
+              <i class="fab fa-gitlab"></i>
+            </a>
+            <span class="ms-2">Github:</span>
+            <a href="https://github.com/marcinbedcyc" target="_blank" 
+            data-toggle="tooltip" data-placement="auto" title="Profil Github">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+          
+          <div class="col">
+            <div class="card shadow h-100">
+              <img class="pop bd-placeholder-img card-img-top cover-and-pointer" 
+              src="img/cookery_book.png" height="225" alt="..." />
+  
+              <div class="card-body">
+                <h4 class="card-title">
+                  Aplikacja monolityczna Django - Cookery Book
+                </h4>
+                <p class="card-text">
+                  Dwujęzyczna aplikacja (Polski i angielski) do przechowywania 
+                  przeróżnych przepisów potraw. Rejestracja użytkowników z 
+                  mailowym potwierdzeniem operacji. Użytkownik może wykonywać 
+                  podstawowe operacje: przeglądać przepisy, dodawać przepisać, 
+                  edytować dane takie jak własne przepisy czy dane użytkownika.
+                </p>
+              </div>
+
+              <div class="card-footer w-100 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="https://github.com/marcinbedcyc/CookeryBook" 
+                  target="_blank" class="repo-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="text-end">
+                  <span class="badge python-bg-color">Python</span>
+                  <span class="badge django-bg-color">Django</span>
+                  <span class="badge bg-primary">SQLite</span>
+                  <span class="badge bootstrap-bg-color">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <img class="pop bd-placeholder-img card-img-top cover-and-pointer" 
+              src="img/qt_learning.png" height="225" alt="..." />
+  
+              <div class="card-body">
+                <h4 class="card-title">
+                  Podstawy grafiki komputerowej - QT learning
+                </h4>
+                <p class="card-text">
+                  Zbiór zadań i projektów realizowanych w obrębie zajęć 
+                  <b>"Laboratorium grafiki i multimediów"</b> zawierających 
+                  implementacje podstawowych algorytmów rysowania kształtów na 
+                  komputerze, począwszy od rysowania odcinków do obiektów 3D.
+                </p>
+              </div>
+
+              <div class="card-footer w-100 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="https://github.com/marcinbedcyc/QtLearning" 
+                  target="_blank" class="repo-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="text-end">
+                  <span class="badge bg-success">Qt</span>
+                  <span class="badge bg-primary">C++</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <img class="pop bd-placeholder-img card-img-top cover-and-pointer" 
+              src="img/generator_cv.png" height="225" alt="..." />
+  
+              <div class="card-body">
+                <h4 class="card-title">Generator CV</h4>
+                <p class="card-text">
+                  Aplikacja na urządzenie z systemem Android do generowania CV 
+                  na podstawie wprowadzonych danych. Wygenerowane CV jest w 
+                  formacie PDF. Aplikacja nie wymaga konta oraz nie przechowuje 
+                  danych wprowadzonych przez użytkownika.
+                </p>
+              </div>
+
+              <div class="card-footer w-100 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="https://github.com/marcinbedcyc/GeneratorCV" 
+                  target="_blank" class="repo-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="text-end">
+                  <span class="badge java-bg-color">Java</span>
+                  <span class="badge android-bg-color">Android</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card shadow h-100">
+              <img class="pop bd-placeholder-img card-img-top cover-and-pointer" 
+              src="img/jokes_world.png" height="225" alt="..." />
+  
+              <div class="card-body">
+                <h4 class="card-title">Jokes World</h4>
+                <p class="card-text">
+                  Projekt zaliczeniowy z przedmiotu "Programowanie aplikacji na 
+                  komputery stacjonarne oraz usług windowsowych w C#" na 
+                  studiach. Projekt składa się z aplikacji klienckiej utworzonej
+                  przy pomocy WPF oraz serwera RestAPI uruchomionego jako usługa
+                  Windows, stworzonego przy pomocy WCF.
+                </p>
+              </div>
+
+              <div class="card-footer w-100 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="https://github.com/marcinbedcyc/JokesWorld" 
+                  target="_blank" class="repo-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="text-end">
+                  <span class="badge c-sharp-bg-color">C#</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
+              src="img/football_league.png" height="225" alt="..." />
+  
+              <div class="card-body">
+                <h4 class="card-title">Projekt bazodanowy - Football League</h4>
+                <p class="card-text">
+                  Projekt zaliczeniowy z przedmiotu "Projekt bazodanowy" na 
+                  studiach. Projekt polegał na przygotowaniu bazy danych i 
+                  uzupełnieniu jej danymi, a następnie przygotowaniu aplikacji
+                  z graficznym interfejsem użytkownika. Wykorzystywana baza to
+                  Oracle Database i była uruchomiona na jednej z maszyn 
+                  wydziałowych. Aplikacja kliencka miała obsługiwać wszystkie 
+                  operacje CRUD.
+                </p>
+              </div>
+
+              <div class="card-footer w-100 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="https://github.com/marcinbedcyc/FootballLeague" 
+                  target="_blank" class="repo-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="text-end">
+                  <span class="badge java-bg-color">Java</span>
+                  <span class="badge bg-secondary">JavaFX</span>
+                  <span class="badge oracle-bg-color">OracleSQL</span>
+                  <span class="badge bg-secondary">Hibernate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <img class="pop bd-placeholder-img card-img-top cover-and-pointer" 
+              src="img/calc.png" height="225" alt="..." />
+  
+              <div class="card-body">
+                <h4 class="card-title">Kalkulator</h4>
+                <p class="card-text">
+                  Prosty kalkulator. Projekt realizowany na potrzeby zaliczenia
+                  przedmiotu na studiach <b>"Programowanie III "</b>. Jeden z 
+                  pierwszych programów napisanych przeze mnie z wykorzystaniem 
+                  GUI.
+                </p>
+              </div>
+
+              <div class="card-footer w-100 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="https://github.com/marcinbedcyc/calculator" 
+                  target="_blank" class="repo-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="text-end">
+                  <span class="badge java-bg-color">Java</span>
+                  <span class="badge bg-secondary">JavaFX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Preview Modal -->
+          <div class="modal fade" id="imagePreviewModal" tabindex="-1" 
+          role="dialog" aria-labelledby="imagePreviewModalLabel" 
+          aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">   
+                <div class="modal-header">
+                  <button type="button" class="btn-close btn-close-white close" 
+                  data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>           
+                <div class="modal-body text-center">
+                  <img src="" class="image-preview img-fluid img-shrink">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Image Preview Modal -->
+
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Kontakt</h2>
+          <p>
+            W razie dodatkowych pytań, bądź chęci nawiązania współpracy 
+            zapraszam do kontaktu.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 contact-info mb-4 shadow">
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Lokalizacja:</h4>
+              <p>Rzeszów, Polska</p>
+            </div>
+    
+            <div class="email">
+              <i class="far fa-envelope"></i>
+              <h4>Email:</h4>
+              <p>cmartindev@gmail.com</p>
+            </div>
+    
+            <div class="phone">
+              <i class="fas fa-phone-volume"></i>
+              <h4>Telefon:</h4>
+              <p>793 607 2334</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82058.15166992301!2d21.91841582477867!3d50.005408871685724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfae3cc14d449%3A0xd2240d31b33eb2ed!2zUnplc3rDs3c!5e0!3m2!1spl!2spl!4v1639344030684!5m2!1spl!2spl"
+            style="width: 100%; height: 274px; border:0;" allowfullscreen=""
+            loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+    
+    <a href="#" 
+    class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </main>
+  <!-- End Main -->
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container mb-0">
+
+      <div class="social-icons mb-3">
+        <a href="https://gitlab.com/marcinbedcyc" target="_blank" 
+        data-bs-toggle="tooltip" data-bs-placement="left" title="Profil GitLab">
           <i class="fab fa-gitlab"></i>
         </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="https://github.com/marcinbedcyc" target="_blank" data-toggle="tooltip" data-placement="auto" title="Profil Github">
+        <a href="https://github.com/marcinbedcyc" target="_blank" 
+        data-bs-toggle="tooltip" data-bs-placement="top" title="Profil Github">
           <i class="fab fa-github"></i>
         </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="marcin_cyc_cv.pdf" class="depending_tooltip" target="_blank" data-toggle="tooltip" data-placement="auto" title="CV">
+        <a href="marcin_cyc_cv.pdf" class="depending_tooltip" target="_blank" 
+        data-bs-toggle="tooltip" data-bs-placement="right" title="CV">
           <i class="fas fa-id-card-alt"></i>
         </a>
-      </li>
-    </ul>
-  </div>
+      </div>
+
+      <div class="copyright">
+         © 2021 Copyright <strong><span>Marcin Cyc</span></strong> . All rights 
+         reserved
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer Section -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js//bootstrap.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/coming-soon.js"></script>
+  <script src="js/portfolio-page.js"></script>
 
 </body>
 
