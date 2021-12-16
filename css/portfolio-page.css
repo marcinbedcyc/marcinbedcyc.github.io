@@ -1,0 +1,411 @@
+:root {
+  --my-background:  #191f35;
+  --my-fg: #E1DCD3;
+  --my-background-90: #191f35d4;
+  --accent-color: #BA3B46;
+}
+
+/* Badges colors */
+.python-bg-color{
+  background-color: #306998;
+}
+
+.django-bg-color{
+  background-color: #092E20;
+}
+
+.java-bg-color{
+  background-color: #f89820;
+}
+
+.android-bg-color{
+  background-color: #3DDC84;
+}
+.c-sharp-bg-color {
+  background-color: #684D95;
+}
+
+.oracle-bg-color{
+  background-color: #f80000;
+}
+
+.bootstrap-bg-color {
+  background-color: #563d7c;
+}
+
+/* Single item styles*/
+.button-about{
+ background-color: var(--accent-color);
+ border-color: var(--accent-color);
+ color: var(--my-fg);
+}
+
+@media (hover: hover) and (pointer: fine){
+  .button-about:hover{
+    background-color: #92262f;
+    border-color: var(--accent-color);
+    color: var(--my-fg);
+  }
+}
+
+.cover-and-pointer {
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.web-page-link{
+  text-decoration: none;
+  color: black;
+}
+
+@media (hover: hover) and (pointer: fine){
+  .web-page-link:hover{
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+}
+
+.repo-link {
+  font-size: 14px;
+  display: inline-block;
+  background: var(--my-background);
+  color: var(--my-fg);
+  border-radius: 50%;
+  padding: 1px 0;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+}
+
+@media (hover: hover) and (pointer: fine){
+  .repo-link:hover{
+    background: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.button-download-cv{
+  background-color: var(--my-background);
+  border-color: var(--my-background);
+  color: var(--my-fg);
+ }
+ 
+ @media (hover: hover) and (pointer: fine){
+   .button-download-cv:hover{
+     background-color: var(--accent-color);
+     border-color: var(--my-background);
+     color: var(--my-fg);
+   }
+ }
+
+/*--------------------------------------------------------------
+# Image Preview Modal
+--------------------------------------------------------------*/
+.modal-dialog {
+  width: auto;
+}
+
+.modal-content {
+  background-color: #ffffff15;
+  transition: backdrop-filter 0.01s;
+  backdrop-filter: blur(8px);
+}
+
+.modal-header {
+  border: transparent;
+}
+
+.close {
+  font-size: 22px;
+}
+
+.img-shrink {
+  max-height: calc(100vh - 225px);
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+#mainNav {
+  background-color: var(--my-background);
+}
+#mainNav .navbar-toggler{
+  color: var(--my-fg);
+}
+#mainNav .offcanvas-header{
+  color: var(--my-fg);
+}
+#mainNav .offcanvas {
+  background-color: var(--my-background-90);
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Section
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--my-background);
+}
+.section-title h2::before,
+.skill-header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after,
+.skill-header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+.experience .experience-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+.experience .experience-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--accent-color);
+  position: relative;
+}
+.experience .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+.experience .experience-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.experience .experience-item ul {
+  padding-left: 20px;
+}
+.experience .experiencee-item ul li {
+  padding-bottom: 10px;
+}
+.experience .experience-item:last-child {
+  padding-bottom: 0;
+}
+.experience .experience-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--accent-color);
+}
+.umk-achievements {
+  font-size: large;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--my-background);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+.back-to-top i {
+  font-size: 18px;
+  color: var(--my-fg);
+  line-height: 0;
+}
+@media (hover: hover) and (pointer: fine){
+  .back-to-top:hover {
+    background: var(--accent-color);
+    color: var(--my-fg);
+  }
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skill-header{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  color: var(--my-background);
+}
+
+/*--------------------------------------------------------------
+# Header - Masthead
+--------------------------------------------------------------*/
+header.masthead {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("/img/header-bg3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Info
+--------------------------------------------------------------*/
+.contact-info {
+  padding: 20px 0 0 40px;
+}
+.contact-info i {
+  font-size: 20px;
+  color: var(--my-fg);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: var(--my-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.contact-info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+.contact-info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #173b6c;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  background: #f7f8f9;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.social-icons a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--my-background);
+  color: var(--my-fg);
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+@media (hover: hover) and (pointer: fine){
+  .social-icons a:hover {
+    background: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+  }
+}
