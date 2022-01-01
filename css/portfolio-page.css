@@ -33,6 +33,10 @@
   background-color: #563d7c;
 }
 
+.fastapi-bg-color {
+  background-color: #05998B;
+}
+
 /* Single item styles*/
 .button-about{
  background-color: var(--accent-color);
@@ -91,7 +95,7 @@
   border-color: var(--my-background);
   color: var(--my-fg);
  }
- 
+
  @media (hover: hover) and (pointer: fine){
    .button-download-cv:hover{
      background-color: var(--accent-color);
