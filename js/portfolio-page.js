@@ -35,47 +35,45 @@ if (backToTopElement) {
   window.addEventListener('scroll', toggleBackToTop)
 }
 
-// var myOffcanvas = document.getElementById('navbarResponsive')
-// var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
-// // const y = element.getBoundingClientRect().top + window.scrollY;
-// // console.log(y)
-
-// const offcanvasDismiss =  () => {
-//   bsOffcanvas.hide()
-// }
-
-// function checkScrollEnd() {
-//   if (window.scrollY != scrollY) {
-//     window.requestAnimationFrame(checkScrollEnd);
-//     console.log(window.scrollY)
-//   }
-//   else {
-//     console.log('scrolled ends')
-//     bsOffcanvas.hide()
-//   }
-//   scrollY = window.scrollY
-// }
-
-// var navLinksList = document.getElementsByClassName('nav-link')
-// for (let navLink of navLinksList){
-//   console.log(navLink)
-//   navLink.addEventListener('click', (e) => {
-//     // e.stopPropagation()
-//     // e.preventDefault()
-//     // bsOffcanvas.hide()
-//     scrollY = window.scrollY
-//     window.requestAnimationFrame(checkScrollEnd)
-//     // if (navLink.offsetHeight + navLink.scrollTop >= navLink.scrollHeight) {  
-//     //   console.log('scrolled to bottom')  
-//     // } 
-//   })
-//   // navLink.onclick = offcanvasDismiss
-// }
-
 // Pass image src to Image Modal Preview
 $(function() {
   $('.pop').on('click', function() {
-    $('.image-preview').attr('src', $(this).attr('src'));
-    $('#imagePreviewModal').modal('show');   
-  });		
+
+    images = $(this).attr('images').split(' ');
+
+    $('#carouselInner').empty();
+    for (const index in images) {
+      $('#carouselInner').append(`
+        <div class="carousel-item ${index == 0 ? 'active' : ''}">
+          <img src="${images[index]}" class="img-fluid img-shrink">
+        </div>
+      `);
+    }
+
+    $('#carouselIndicators').empty();
+    for (const index in images) {
+      $('#carouselIndicators').append(`
+        <button type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide-to="${index}" aria-label="Slide ${index}"
+        ${index == 0 ? 'class="active" aria-current="true"' : 'class=""'}></button>
+      `);
+    }
+
+    $('#imagePreviewModal').modal('show');
+  });
+});
+
+$(document).keydown(function(e) {
+  if ($("#imagePreviewModal").hasClass('show')) {
+    // Left arrow
+    if (e.keyCode === 37) {
+      $(".carousel-control-prev").click();
+      return false;
+   }
+   // Right arrow
+   if (e.keyCode === 39) {
+      $(".carousel-control-next").click();
+      return false;
+   }
+  }
 });

@@ -499,7 +499,7 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/sudoku.png" height="225" alt="..." />
+              images="img/sudoku.png" src="img/sudoku.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">
@@ -533,7 +533,8 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/cookery_book.png" height="225" alt="..." />
+              images="img/cookery_book_dashboard.png img/cookery_book.png"
+              src="img/cookery_book_dashboard.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">
@@ -569,7 +570,7 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/robot.png" height="225" alt="..." />
+              images="img/robot.png" src="img/robot.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">
@@ -602,7 +603,7 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/qt_learning.png" height="225" alt="..." />
+              images="img/qt_learning.png" src="img/qt_learning.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">
@@ -635,7 +636,8 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/generator_cv.png" height="225" alt="..." />
+              images="img/generator_cv/generator_cv.png img/generator_cv/personalData1.png img/generator_cv/addAbility.png img/generator_cv/educationAdd.png img/generator_cv/exampleCV.png img/generator_cv/success.png"
+              src="img/generator_cv/generator_cv.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">Generator CV</h4>
@@ -666,7 +668,7 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/jokes_world.png" height="225" alt="..." />
+              images="img/jokes_world.png" src="img/jokes_world.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">Jokes World</h4>
@@ -696,7 +698,7 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/football_league.png" height="225" alt="..." />
+              images="img/football_league.png" src="img/football_league.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">Projekt bazodanowy - Football League</h4>
@@ -731,7 +733,7 @@
           <div class="col">
             <div class="card shadow h-100">
               <img class="pop bd-placeholder-img card-img-top cover-and-pointer"
-              src="img/calc.png" height="225" alt="..." />
+              images="img/calc.png" src="img/calc.png" height="225" alt="..." />
 
               <div class="card-body">
                 <h4 class="card-title">Kalkulator</h4>
@@ -762,14 +764,30 @@
           <div class="modal fade" id="imagePreviewModal" tabindex="-1"
           role="dialog" aria-labelledby="imagePreviewModalLabel"
           aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-dialog modal-fullscreen pb-5">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="btn-close btn-close-white close"
                   data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                  <img src="" class="image-preview img-fluid img-shrink">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators fixed-bottom mb-4" id="carouselIndicators">
+                      <!-- Indicators added by JS -->
+                    </div>
+                    <div class="carousel-inner" id="carouselInner">
+                      <!-- Images inserted by JS -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <!-- <img src="" class="image-preview img-fluid img-shrink"> -->
                 </div>
               </div>
             </div>
