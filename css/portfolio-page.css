@@ -37,6 +37,14 @@
   background-color: #05998B;
 }
 
+.docker-bg-color {
+  color: #0db7ed;
+  background-color: white;
+  border-width: 1px;
+  border-color: #384d54;
+  border-style: solid;
+}
+
 /* Single item styles*/
 .button-about{
  background-color: var(--accent-color);
