@@ -45,6 +45,10 @@
   border-style: solid;
 }
 
+.drf-bg-color {
+  background-color: #7F2D2D;
+}
+
 /* Single item styles*/
 .button-about{
  background-color: var(--accent-color);
